@@ -31,5 +31,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "test2": "/components/test2"
+  }
 }

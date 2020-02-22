@@ -142,20 +142,25 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {return __webpack_require__.e(/*! import() | components/test */ "components/test").then(__webpack_require__.bind(null, /*! ../../components/test.vue */ 34));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
+      part: '这是一个子组件（局部组件）',
+      global: '这是一个子组件（全局组件）',
       swiperIndex: 0,
       list: [
       'http://img2.imgtn.bdimg.com/it/u=2249146272,3803357286&fm=26&gp=0.jpg',
@@ -164,6 +169,9 @@ var _default =
 
 
   },
+  components: {
+    test: test },
+
   onLoad: function onLoad() {},
   methods: {
     swiperChange: function swiperChange(e) {

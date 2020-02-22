@@ -38,5 +38,7 @@
   },
   "appname": "uni-app-project",
   "compilerVersion": "2.5.1",
-  "usingComponents": {}
+  "usingComponents": {
+    "test2": "/components/test2"
+  }
 }

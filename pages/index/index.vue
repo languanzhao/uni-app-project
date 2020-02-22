@@ -5,13 +5,18 @@
 				<image :class="['image', swiperIndex === index ? 'active' : '']" :src="item" mode=""></image>
 			</swiper-item>
 		</swiper>
+		<test :way="part"></test>
+		<test2 :way="global"></test2>
 	</view>
 </template>
 
 <script>
+import test from '../../components/test.vue'
 export default {
 	data() {
 		return {
+			part:'这是一个子组件（局部组件）',
+			global:'这是一个子组件（全局组件）',
 			swiperIndex: 0,
 			list: [
 				'http://img2.imgtn.bdimg.com/it/u=2249146272,3803357286&fm=26&gp=0.jpg',
@@ -19,6 +24,9 @@ export default {
 				'http://img2.imgtn.bdimg.com/it/u=1890128306,362626824&fm=26&gp=0.jpg'
 			]
 		};
+	},
+	components:{
+		test
 	},
 	onLoad() {},
 	methods: {
